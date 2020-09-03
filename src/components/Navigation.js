@@ -223,7 +223,11 @@ export default function Navigation() {
       </div>
 
       <Links menuOpen={menuOpen}>
+<<<<<<< HEAD
         <Link to="/about">{t("nav.about")}</Link>
+=======
+        <Link to="/about">About</Link>
+>>>>>>> master
         <a href="https://medium.com/the-ethereum-name-service">
           {t("nav.blog")}
         </a>

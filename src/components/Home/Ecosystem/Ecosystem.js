@@ -180,8 +180,13 @@ export default function Ecosystem(props) {
         </Grid>
         <More href="#" onClick={() => setMoreApps(!moreApps)}>
           {moreApps
+<<<<<<< HEAD
             ? `${t("home.ecosystem.seeLess")} -`
             : `${t("home.ecosystem.seeMore")} +`}
+=======
+            ? `${t("home.ecosystem.seeMore")}} - `
+            : `${t("home.ecosystem.seeLess")} +`}
+>>>>>>> master
         </More>
       </Section>
       <Section>
