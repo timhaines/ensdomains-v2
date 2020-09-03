@@ -92,7 +92,7 @@ export default function Footer(props) {
       <SocialContainer>
         {social.map(s => (
           <ExternalLink href={s.link}>
-            <img src={s.img} />
+            <img src={s.img} alt={s.text + " image"} />
             {s.text}
           </ExternalLink>
         ))}

@@ -1,12 +1,10 @@
-import React, { useRef } from "react"
+import React from "react"
 import { motion, useViewportScroll, useTransform } from "framer-motion"
 import styled from "@emotion/styled"
 import { useTranslation } from "react-i18next"
 import { H2, P as DefaultP } from "../../Typography"
 import { importAll } from "../../../utils"
 import wallet from "./wallet.svg"
-
-import mq from "../../../mediaQuery"
 
 const HeroContainer = styled("div")`
   padding: 120px 20px;
@@ -90,10 +88,10 @@ export default function Cryptocurrencies(props) {
         <P>{t("home.cryptocurrencies.text")}</P>
 
         <WalletAnimation>
-          <img className="wallet" src={wallet} />
+          <img alt="wallet" className="wallet" src={wallet} />
           <Coins style={{ x: x }}>
-            {coins.map(coin => {
-              return <img src={coin.src} />
+            {coins.map((coin, i) => {
+              return <img alt={`crypto coin${i}`} src={coin.src} />
             })}
           </Coins>
         </WalletAnimation>

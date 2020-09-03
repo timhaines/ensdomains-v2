@@ -1,5 +1,4 @@
-import React, { useState, useContext } from "react"
-import { useTranslation } from "react-i18next"
+import React, { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import styled from "@emotion/styled"
 import { Link, useI18next, I18nextContext } from "gatsby-plugin-react-i18next"
@@ -145,7 +144,7 @@ export default function LanguageSwitcher({ mobile }) {
   const lang = context.language ? context.language : context.defaultLanguage
   const [showDropdown, setShowDropdown] = useState(false)
   const { originalPath } = useI18next()
-  const selectedLanguage = LANGUAGES.find(l => l.value === lang)
+  const selectedLanguage = getLang(lang)
 
   return (
     <LanguageSwitcherContainer mobile={mobile}>

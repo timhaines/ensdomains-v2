@@ -168,6 +168,7 @@ const customRenderThumb = ({ children, t }) => {
         </>
       )
     }
+    return null
   })
 }
 
@@ -185,13 +186,13 @@ export default function HeroCarousel(props) {
         renderThumbs={children => customRenderThumb({ children, t })}
       >
         <Slide>
-          <img src={searchImg} />
+          <img src={searchImg} alt="search img" />
         </Slide>
         <Slide>
-          <img src={registerImg} />
+          <img src={registerImg} alt="register img" />
         </Slide>
         <Slide>
-          <img src={manageImg} />
+          <img src={manageImg} alt="manage img" />
         </Slide>
       </Carousel>
       <Launch href="https://app.ens.domains">

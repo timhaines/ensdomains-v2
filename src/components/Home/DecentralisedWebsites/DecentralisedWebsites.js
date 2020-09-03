@@ -62,15 +62,31 @@ export default function DecentralisedWebsites(props) {
       <P>{t("home.decentralisedWebsites.text")}</P>
       <ImageAnimation ref={ref}>
         <ImageTransition>
-          <motion.img src={website2} style={{ opacity: inView ? 0 : 1 }} />
-          <motion.img src={blur1} style={{ opacity: inView ? 1 : 0 }} />
+          <motion.img
+            alt="website2"
+            src={website2}
+            style={{ opacity: inView ? 0 : 1 }}
+          />
+          <motion.img
+            alt="website2 blurred"
+            src={blur1}
+            style={{ opacity: inView ? 1 : 0 }}
+          />
         </ImageTransition>
         <ImageTransition>
-          <img src={website1} />
+          <img alt="website1" src={website1} />
         </ImageTransition>
         <ImageTransition>
-          <motion.img src={website3} animate={{ opacity: inView ? 0 : 1 }} />
-          <motion.img src={blur2} animate={{ opacity: inView ? 1 : 0 }} />
+          <motion.img
+            alt="website3"
+            src={website3}
+            animate={{ opacity: inView ? 0 : 1 }}
+          />
+          <motion.img
+            alt="website3 blurred"
+            src={blur2}
+            animate={{ opacity: inView ? 1 : 0 }}
+          />
         </ImageTransition>
       </ImageAnimation>
       <Button href="https://medium.com/the-ethereum-name-service/upload-to-ipfs-directly-from-the-ens-manager-with-new-tool-ac055db5d2fe">

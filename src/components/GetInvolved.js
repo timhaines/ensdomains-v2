@@ -122,7 +122,10 @@ export default function GetInvolved(props) {
       <Links>
         {links.map(l => (
           <LinkItem>
-            <img src={l.img} />
+            <img
+              src={l.img}
+              alt={t(`home.getInvolved.${l.name}.title`) + "image"}
+            />
             <h3>{t(`home.getInvolved.${l.name}.title`)}</h3>
             <ExternalLink href={l.link}>
               {t(`home.getInvolved.${l.name}.cta`)}

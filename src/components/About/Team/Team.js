@@ -11,7 +11,6 @@ import nick from "./photos/nick.png"
 import makoto from "./photos/makoto.png"
 import brantly from "./photos/brantly.png"
 import jim from "./photos/jim.png"
-import hoverCircle from "./hoverCircle.png"
 
 const team = [
   {
@@ -150,7 +149,7 @@ function TeamMember({ member }) {
   return (
     <TeamMemberContainer href={member.link}>
       <div className="img-wrapper">
-        <img src={member.img} className="photo" />
+        <img src={member.img} className="photo" alt={`${member.name}`} />
         <div className="hover" />
       </div>
       <h4>{member.name}</h4>

@@ -11,8 +11,6 @@ import file from "./assets/file.svg"
 import onion from "./assets/onion.svg"
 import usernames from "./assets/usernames.svg"
 
-import mq from "../../../mediaQuery"
-
 const features = [
   {
     name: "recordType",
@@ -103,7 +101,7 @@ function Feature({ feature: f }) {
   const { t } = useTranslation()
   return (
     <FeatureContainer>
-      <img src={f.img} />
+      <img src={f.img} alt={`additional feature ${f.name}`} />
       <p>{t(`home.additionalFeatures.${f.name}`)}</p>
       <a href={f.link}>{t("c.learnMore")}</a>
     </FeatureContainer>
