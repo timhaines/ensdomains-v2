@@ -28,7 +28,7 @@ const team = [
     name: "Nick Johnson",
     title: "Creator & Lead Developer",
     img: nick,
-    link: "https://twitter.com/wekabot",
+    link: "https://twitter.com/nicksdjohnson",
   },
   {
     name: "Jeff Lau",
